@@ -1,0 +1,34 @@
+========================================================================================================================
+ERC20_NAMES         = {<addr_str>: <name_str>}          0x123   :   "SafeMoon Token"
+ERC20_DECIMALS      = {<addr_str>: <decimals_str>}      0x123   :   "18"
+ERC20_TOTALSUPPLY   = {<addr_str>: <total_sup_str>}     0x123   :   "10000000000000000000000000"
+ERC20_SYMBOL        = {<addr_str>: <symbol>}            0x123   :   "ANO"
+
+ERC20_BLACKLIST_ADDR = SET(<addr_str>)
+
+ERC20_TO_FETCH = SET(<addr_str>)            # A set of all un-crawled ERC20 contracts to fetch
+
+========================================================================================================================
+DEX HUNTER
+
+DEXHUNTER_NONDEX_ADDRESSES
+DEXHUNTER_MAYBE_DEX
+
+========================================================================================================================
+RESERVE MANAGEMENT
+
+<PREFIX>_RESERVE_UPDATED      0xC967d01c9725d878FBB635cd3d73CA17Dd7070c9  : 1622168236.7813592
+<PREFIX>_RESERVE_AMOUNTS      0x4607F34fc4a8379751b304608e77E9d0FE34F3d3  : 139620351147416849643186,937978683210414
+
+========================================================================================================================
+PAIR ADDRESSES
+
+<PREFIX>_ADDR_BLACKLIST         set( addr:str, pair_idx:int, )
+
+<PREFIX>_IDX_ADDR               { idx: int -> addr: str }
+<PREFIX>_IDX_NAME               { idx: int -> addr: str }
+<PREFIX>_IDX_SYMBOL             { idx: int -> addr: str }
+<PREFIX>_IDX_TOKEN0_ADDR        { idx: int -> addr: str }
+<PREFIX>_IDX_TOKEN0_NAME        { idx: int -> addr: str }
+<PREFIX>_IDX_TOKEN1_ADDR        { idx: int -> addr: str }
+<PREFIX>_IDX_TOKEN1_NAME        { idx: int -> addr: str }
